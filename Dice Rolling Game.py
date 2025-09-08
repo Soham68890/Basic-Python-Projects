@@ -1,6 +1,13 @@
-user_input = input("Do you want to continue? (Yes/No): ").lower()
+#Dice rolling game
+import random
 
-if user_input == "yes":
-    print("Great! Let's move forward.")
-else:
-    print("Alright, stopping here.")
+while True:
+    choice = input("Do you want to roll(Yes/No)?").lower()
+    
+    if choice == "yes":
+        print(random.randint(1,6))
+    elif choice == "no":
+        print("Thanks for playing")
+        break
+    else:
+        print("Invalid Choice")
